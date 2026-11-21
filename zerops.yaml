@@ -1,0 +1,16 @@
+zerops:
+  - setup: pg
+    build:
+      base: nodejs@22
+      deployFiles:
+        - index.js
+        - package.json
+    run:
+      os: ubuntu
+      base: nodejs@22
+      envVariables:
+        PORT: "3000"
+      ports:
+        - port: 3000
+          httpSupport: false
+      start: npm start
