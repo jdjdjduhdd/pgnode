@@ -1,0 +1,17 @@
+zerops:
+  - setup: pg
+    build:
+      base: nodejs@22
+      deployFiles:
+        - index.js
+        - package.json
+    run:
+      base: nodejs@22
+      envVariables:
+        PASARGUARD_MODE: panel
+        ADMIN_USER: admin
+        PORT: "3000"
+      ports:
+        - port: 3000
+          httpSupport: true
+      start: npm start
