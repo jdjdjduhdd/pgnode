@@ -6,6 +6,7 @@ zerops:
         - index.js
         - package.json
     run:
+      os: ubuntu
       base: nodejs@22
       envVariables:
         PASARGUARD_MODE: panel
