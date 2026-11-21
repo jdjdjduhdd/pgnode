@@ -9,8 +9,6 @@ zerops:
       os: ubuntu
       base: nodejs@22
       envVariables:
-        PASARGUARD_MODE: panel
-        ADMIN_USER: admin
         PORT: "3000"
       ports:
         - port: 3000
