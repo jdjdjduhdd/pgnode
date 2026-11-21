@@ -1,0 +1,17 @@
+{
+  "name": "pasarguard-katabump",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PasarGuard node + Xray-core only for KataBump, with optional full-panel mode.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --max-old-space-size=48 --expose-gc index.js",
+    "start:panel": "PASARGUARD_MODE=panel node --max-old-space-size=48 --expose-gc index.js",
+    "selftest": "SELFTEST=1 node index.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": ["pasarguard", "xray", "vless", "katabump", "panel"],
+  "license": "MIT"
+}
